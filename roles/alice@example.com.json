@@ -1,0 +1,17 @@
+{
+  "workspaces": [
+    {
+      "name": "team-1-workspace",
+      "workspacePermission": "admin"
+    },
+    {
+      "name": "team-2-workspace",
+      "workspacePermission": "none",
+      "repositories": [
+        { "name": "repo-1", "permission": "canDeploy" },
+        { "name": "repo-2", "permission": "canRead" },
+        { "name": "repo-3", "permission": "canDeleteOverride" }
+      ]
+    }
+  ]
+}
