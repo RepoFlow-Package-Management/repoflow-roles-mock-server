@@ -63,7 +63,9 @@ Just run:
 
 ```bash
 docker build -t repoflow-mock-roles-api .
-docker run -p 9085:9085 repoflow-mock-roles-api
+docker run -p 9085:9085 \
+  -v $(pwd)/roles:/usr/share/nginx/html/roles \
+  repoflow-mock-roles-api
 ```
 
 ### Learn More
@@ -73,4 +75,4 @@ See the [RepoFlow documentation on Role Mapping]() for more details about role m
 ### License
 
 This mock roles API project is licensed under the MIT License.  
-**Note:** RepoFlow itself is not MIT-licensed—this repository is only an example and reference for integrating with RepoFlow.
+**Note:** RepoFlow itself is not MIT-licensed, this repository is only an example and reference for integrating with RepoFlow.
