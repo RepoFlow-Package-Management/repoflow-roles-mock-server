@@ -14,7 +14,7 @@ It uses an unprivileged Nginx Docker container to serve static JSON files that d
 ## How it Works
 
 - Each user’s roles and permissions are defined in a `.json` file named after their email address (e.g., `alice@example.com.json`).
-- RepoFlow (or any client) fetches the roles for a user by making a GET request to `/roles/[user-email]`, sending an authentication header.
+- RepoFlow fetches roles for a user by making a GET request to the endpoint, with the email filled in where `:user-email` appears in the URL, sending an authentication header.
 - Nginx serves the static file if the auth header matches.
 
 ## Example
