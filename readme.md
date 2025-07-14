@@ -70,7 +70,7 @@ docker run -p 9085:9085 \
 
 ### Learn More
 
-See the [RepoFlow documentation on Role Mapping]() for more details about role mapping, schemas, and best practices.
+See the [RepoFlow documentation on Role Mapping](https://docs.repoflow.io/Self-Hosting/role-mapping) for more details about role mapping, schemas, and best practices.
 
 ### License
 
